@@ -7,6 +7,7 @@ import { AideModule } from './aide/aide.module';
 import { ConnexionModule } from './connexion/connexion.module';
 import { ForumModule } from './forum/forum.module';
 import { SharedPublicModule } from './shared-public/shared-public.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { SharedPublicModule } from './shared-public/shared-public.module';
     AideModule,
     ConnexionModule,
     ForumModule,
-    SharedPublicModule
+    SharedPublicModule,
   ]
 })
 export class PublicModule { }

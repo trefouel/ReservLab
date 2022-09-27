@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { PublicModule } from './public/public.module';
 import { ProtectedModule } from './protected/protected.module';
 import { AdminModule } from './admin/admin.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AdminModule } from './admin/admin.module';
     CoreModule,
     PublicModule,
     ProtectedModule,
-    AdminModule
+    AdminModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

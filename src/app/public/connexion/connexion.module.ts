@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ConnexionRoutingModule } from './connexion-routing.module';
+import { AuthComponent } from './auth/auth.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AuthComponent
+  ],
   imports: [
     CommonModule,
-    ConnexionRoutingModule
+    FontAwesomeModule,
+    RouterModule
   ]
 })
 export class ConnexionModule { }

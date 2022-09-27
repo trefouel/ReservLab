@@ -1,0 +1,24 @@
+<header class="header">
+
+  <div id="menu-btn" (click)="toggleNav()">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </div>
+
+  <div class="logo">
+    <a routerLink=""><span class="navLink">ReservLab</span></a>
+  </div>
+
+  <nav class="navbar" [ngClass]="{ active: mobile }">
+    <a routerLink="playground"><span class="navLink">PlayGround</span></a>
+    <a routerLink="community"><span class="navLink">Community</span></a>
+    <a routerLink="gerer"><span class="navLink">Gerer vos projets</span></a>
+    <a routerLink="aide"><span class="navLink">Aide</span></a>
+
+  </nav>
+
+  <a routerLink="connexion" routerLinkActive="active">
+    <span class="navLink btn" *ngIf="logUp">Connexion</span>
+    <span class="navLink btn" *ngIf="!logUp">SignUp</span>
+  </a>
+
+</header>
