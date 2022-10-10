@@ -9,7 +9,6 @@ import { ForumModule } from './forum/forum.module';
 import { SharedPublicModule } from './shared-public/shared-public.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-
 @NgModule({
   declarations: [],
   imports: [
@@ -20,6 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ConnexionModule,
     ForumModule,
     SharedPublicModule,
-  ]
+    FontAwesomeModule,
+  ],
 })
-export class PublicModule { }
+export class PublicModule {}
