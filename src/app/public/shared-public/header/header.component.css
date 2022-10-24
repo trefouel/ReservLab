@@ -15,8 +15,9 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.8rem 9%;
-  margin-bottom: 2rem;
+  margin-bottom: .4rem;
 }
+
 .header .navbar span.navLink {
   font-size: 1.7rem;
   color: #fea;
@@ -26,10 +27,12 @@
   border-radius: 0.7rem;
   font-weight: 500;
 }
+
 .header .navbar span.navLink:hover {
   background: #3b5ea7;
   color: gold;
 }
+
 .header .navbar .router-link-exact-active.router-link-active {
   font-size: 1.7rem;
   display: inline-block;
@@ -39,27 +42,33 @@
   font-weight: 500;
   background: #3b5ea7;
 }
+
 .header .navbar .router-link-exact-active.router-link-active span {
   color: goldenrod;
 }
+
 .header .btn {
   margin-top: 0;
 }
+
 .logo {
   text-transform: none;
   font-size: 2.5rem;
   font-weight: bolder;
 }
+
 .logo span.navLink {
   color: #fbfef9;
   padding-right: 0.5rem;
 }
+
 #menu-btn {
   font-size: 2.5rem;
   color: #fbfef9ff;
   cursor: pointer;
   display: none;
 }
+
 @media (max-width: 1174px) {
   .header {
     padding: 1rem 2rem;
@@ -69,6 +78,7 @@
     padding: 0.4rem 0.7rem;
   }
 }
+
 @media (max-width: 991px) {
   .header {
     padding: 1rem 2rem;
@@ -78,6 +88,7 @@
     padding: 0.3rem 0.3rem;
   }
 }
+
 @media (max-width: 768px) {
   * {
     -webkit-transition: none;
@@ -111,3 +122,4 @@
     padding: 0.5rem auto;
   }
 }
+/*# sourceMappingURL=header.component.css.map */

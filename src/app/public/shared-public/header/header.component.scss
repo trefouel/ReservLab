@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #255a85;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.8rem 9%;
+  margin-bottom: .4rem;
+}
+.header .navbar span.navLink {
+  font-size: 1.7rem;
+  color: #fea;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+}
+.header .navbar span.navLink:hover {
+  background: #3b5ea7;
+  color: gold;
+}
+.header .navbar .router-link-exact-active.router-link-active {
+  font-size: 1.7rem;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  background: #3b5ea7;
+}
+.header .navbar .router-link-exact-active.router-link-active span {
+  color: goldenrod;
+}
+.header .btn {
+  margin-top: 0;
+}
+.logo {
+  text-transform: none;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.logo span.navLink {
+  color: #fbfef9;
+  padding-right: 0.5rem;
+}
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fbfef9ff;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1174px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .header .navbar span.navLink {
+    margin: 0 0.7rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .header .navbar span.navLink {
+    margin: 0 0.3rem;
+    padding: 0.3rem 0.3rem;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    -webkit-transition: none;
+    transition: none;
+  }
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #29f;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar span.navLink {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+  }
+  .header .navbar .router-link-exact-active.router-link-active {
+    font-size: 1.7rem;
+    display: block;
+    margin: 0.3rem 1rem;
+    padding: 0.5rem auto;
+  }
+}
