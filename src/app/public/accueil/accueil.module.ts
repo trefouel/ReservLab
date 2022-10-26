@@ -12,7 +12,7 @@ import { PageComponent } from './page/page.component';
   ],
   imports: [
     CommonModule,
-    AccueilRoutingModule,
+    // AccueilRoutingModule,
     SharedPublicModule
   ]
 })
