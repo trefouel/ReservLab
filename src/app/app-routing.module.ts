@@ -11,16 +11,16 @@ const route: Routes = [
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () =>
-      import('./public/public.module').then((m) => m.PublicModule),
-  },
-  { path: '**', redirectTo: '/connexion', pathMatch: 'full' },
-  {
     path: 'user',
     loadChildren: () =>
       import('./protected/protected.module').then((m) => m.ProtectedModule),
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./public/public.module').then((m) => m.PublicModule),
+  },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -4,8 +4,8 @@ import { PageComponent } from './accueil/page/page.component';
 import { AuthComponent } from './connexion/auth/auth.component';
 
 const routes: Routes = [
-  {path: 'home', component: PageComponent},
   {path: 'connexion', component: AuthComponent},
+  {path: '', component: PageComponent},
 ];
 
 @NgModule({
